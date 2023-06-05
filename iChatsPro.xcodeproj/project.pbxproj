@@ -9,19 +9,45 @@
 /* Begin PBXBuildFile section */
 		CA24FA132A2DE46F00206392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA122A2DE46F00206392 /* AppDelegate.swift */; };
 		CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA142A2DE46F00206392 /* SceneDelegate.swift */; };
-		CA24FA172A2DE46F00206392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA162A2DE46F00206392 /* ViewController.swift */; };
+		CA24FA172A2DE46F00206392 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA162A2DE46F00206392 /* AuthViewController.swift */; };
 		CA24FA1C2A2DE47200206392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA24FA1B2A2DE47200206392 /* Assets.xcassets */; };
 		CA24FA1F2A2DE47200206392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA24FA1D2A2DE47200206392 /* LaunchScreen.storyboard */; };
+		CA24FA272A2DEDE900206392 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */; };
+		CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */; };
+		CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */; };
+		CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */; };
+		CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */; };
+		CA24FA342A2DF8C900206392 /* TemplateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA332A2DF8C900206392 /* TemplateButton.swift */; };
+		CA24FA362A2DFD0900206392 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */; };
+		CA24FA382A2E334200206392 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA372A2E334200206392 /* SignUpViewController.swift */; };
+		CA24FA3B2A2E35B700206392 /* SingleLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA3A2A2E35B700206392 /* SingleLineTextField.swift */; };
+		CA24FA3D2A2E437500206392 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA3C2A2E437400206392 /* LoginViewController.swift */; };
+		CA24FA3F2A2E4BEB00206392 /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA3E2A2E4BEB00206392 /* ProfileSetupViewController.swift */; };
+		CA24FA412A2E4DF000206392 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA402A2E4DF000206392 /* PhotoView.swift */; };
+		CA24FA432A2E547B00206392 /* UISegmentedControl+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA24FA0F2A2DE46F00206392 /* iChatsPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatsPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24FA122A2DE46F00206392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA24FA142A2DE46F00206392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA24FA162A2DE46F00206392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA24FA162A2DE46F00206392 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CA24FA1B2A2DE47200206392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA24FA1E2A2DE47200206392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA24FA202A2DE47200206392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA332A2DF8C900206392 /* TemplateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateButton.swift; sourceTree = "<group>"; };
+		CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA372A2E334200206392 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CA24FA3A2A2E35B700206392 /* SingleLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLineTextField.swift; sourceTree = "<group>"; };
+		CA24FA3C2A2E437400206392 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA24FA3E2A2E4BEB00206392 /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
+		CA24FA402A2E4DF000206392 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +80,59 @@
 		CA24FA112A2DE46F00206392 /* iChatsPro */ = {
 			isa = PBXGroup;
 			children = (
-				CA24FA122A2DE46F00206392 /* AppDelegate.swift */,
-				CA24FA142A2DE46F00206392 /* SceneDelegate.swift */,
-				CA24FA162A2DE46F00206392 /* ViewController.swift */,
+				CA24FA392A2E335C00206392 /* Views */,
+				CA24FA322A2DF78800206392 /* App */,
+				CA24FA312A2DF77500206392 /* Extensions */,
+				CA24FA162A2DE46F00206392 /* AuthViewController.swift */,
+				CA24FA372A2E334200206392 /* SignUpViewController.swift */,
+				CA24FA3C2A2E437400206392 /* LoginViewController.swift */,
+				CA24FA3E2A2E4BEB00206392 /* ProfileSetupViewController.swift */,
 				CA24FA1B2A2DE47200206392 /* Assets.xcassets */,
 				CA24FA1D2A2DE47200206392 /* LaunchScreen.storyboard */,
 				CA24FA202A2DE47200206392 /* Info.plist */,
 			);
 			path = iChatsPro;
+			sourceTree = "<group>";
+		};
+		CA24FA302A2DF76000206392 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */,
+				CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */,
+				CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */,
+				CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */,
+				CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */,
+				CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */,
+				CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CA24FA312A2DF77500206392 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA302A2DF76000206392 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA24FA322A2DF78800206392 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA122A2DE46F00206392 /* AppDelegate.swift */,
+				CA24FA142A2DE46F00206392 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CA24FA392A2E335C00206392 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA332A2DF8C900206392 /* TemplateButton.swift */,
+				CA24FA3A2A2E35B700206392 /* SingleLineTextField.swift */,
+				CA24FA402A2E4DF000206392 /* PhotoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +205,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA24FA172A2DE46F00206392 /* ViewController.swift in Sources */,
+				CA24FA382A2E334200206392 /* SignUpViewController.swift in Sources */,
+				CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */,
+				CA24FA362A2DFD0900206392 /* UIStackView+Ext.swift in Sources */,
+				CA24FA412A2E4DF000206392 /* PhotoView.swift in Sources */,
+				CA24FA3B2A2E35B700206392 /* SingleLineTextField.swift in Sources */,
+				CA24FA342A2DF8C900206392 /* TemplateButton.swift in Sources */,
+				CA24FA172A2DE46F00206392 /* AuthViewController.swift in Sources */,
 				CA24FA132A2DE46F00206392 /* AppDelegate.swift in Sources */,
 				CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */,
+				CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */,
+				CA24FA272A2DEDE900206392 /* UIButton+Ext.swift in Sources */,
+				CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */,
+				CA24FA3D2A2E437500206392 /* LoginViewController.swift in Sources */,
+				CA24FA3F2A2E4BEB00206392 /* ProfileSetupViewController.swift in Sources */,
+				CA24FA432A2E547B00206392 /* UISegmentedControl+Ext.swift in Sources */,
+				CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
