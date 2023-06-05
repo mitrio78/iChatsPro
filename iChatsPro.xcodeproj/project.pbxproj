@@ -24,6 +24,7 @@
 		CA24FA3D2A2E437500206392 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA3C2A2E437400206392 /* LoginViewController.swift */; };
 		CA24FA3F2A2E4BEB00206392 /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA3E2A2E4BEB00206392 /* ProfileSetupViewController.swift */; };
 		CA24FA412A2E4DF000206392 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA402A2E4DF000206392 /* PhotoView.swift */; };
+		CA24FA432A2E547B00206392 /* UISegmentedControl+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CA24FA3C2A2E437400206392 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA24FA3E2A2E4BEB00206392 /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
 		CA24FA402A2E4DF000206392 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */,
 				CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */,
 				CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */,
+				CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */,
 				CA24FA3D2A2E437500206392 /* LoginViewController.swift in Sources */,
 				CA24FA3F2A2E4BEB00206392 /* ProfileSetupViewController.swift in Sources */,
+				CA24FA432A2E547B00206392 /* UISegmentedControl+Ext.swift in Sources */,
 				CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
