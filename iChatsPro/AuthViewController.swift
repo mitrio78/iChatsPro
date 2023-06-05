@@ -55,11 +55,53 @@ class AuthViewController: UIViewController {
         )
     }()
 
+    private lazy var stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 40
+        return stack
+    }()
+
     // MARK: - Inheritance
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
+    }
+}
+
+// MARK: - Private methods
+
+fileprivate extension AuthViewController {
+
+    func configure() {
+        setupViews()
+        setupConstraints()
+    }
+
+    func setupViews() {
         view.backgroundColor = .systemBackground
+        let googleView = AuthButton(label: googleLabel, button: googleButton)
+        let emailView = AuthButton(label: emailLabel, button: eMailButton)
+        let loginView = AuthButton(label: alreadyOnboardLabel, button: loginButton)
+
+        stackView.addArrangedSubviews([googleView, emailView, loginView])
+
+        view.addSubview(logoImageView)
+        view.addSubview(stackView)
+    }
+
+    func setupConstraints() {
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 60),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+        ])
     }
 }
 

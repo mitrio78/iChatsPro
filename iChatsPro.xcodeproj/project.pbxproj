@@ -17,6 +17,8 @@
 		CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */; };
 		CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */; };
 		CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */; };
+		CA24FA342A2DF8C900206392 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA332A2DF8C900206392 /* AuthButton.swift */; };
+		CA24FA362A2DFD0900206392 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA332A2DF8C900206392 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,45 @@
 		CA24FA112A2DE46F00206392 /* iChatsPro */ = {
 			isa = PBXGroup;
 			children = (
-				CA24FA122A2DE46F00206392 /* AppDelegate.swift */,
-				CA24FA142A2DE46F00206392 /* SceneDelegate.swift */,
+				CA24FA322A2DF78800206392 /* App */,
+				CA24FA312A2DF77500206392 /* Extensions */,
 				CA24FA162A2DE46F00206392 /* AuthViewController.swift */,
-				CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */,
-				CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */,
-				CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */,
-				CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */,
-				CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */,
+				CA24FA332A2DF8C900206392 /* AuthButton.swift */,
 				CA24FA1B2A2DE47200206392 /* Assets.xcassets */,
 				CA24FA1D2A2DE47200206392 /* LaunchScreen.storyboard */,
 				CA24FA202A2DE47200206392 /* Info.plist */,
 			);
 			path = iChatsPro;
+			sourceTree = "<group>";
+		};
+		CA24FA302A2DF76000206392 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */,
+				CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */,
+				CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */,
+				CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */,
+				CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */,
+				CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CA24FA312A2DF77500206392 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA302A2DF76000206392 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA24FA322A2DF78800206392 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA122A2DE46F00206392 /* AppDelegate.swift */,
+				CA24FA142A2DE46F00206392 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */,
+				CA24FA362A2DFD0900206392 /* UIStackView+Ext.swift in Sources */,
+				CA24FA342A2DF8C900206392 /* AuthButton.swift in Sources */,
 				CA24FA172A2DE46F00206392 /* AuthViewController.swift in Sources */,
 				CA24FA132A2DE46F00206392 /* AppDelegate.swift in Sources */,
 				CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */,
