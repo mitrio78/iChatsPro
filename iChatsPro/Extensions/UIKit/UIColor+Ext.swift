@@ -19,4 +19,8 @@ extension UIColor {
     static func buttonBlack() -> UIColor {
         UIColor(named: "buttonBlack")!
     }
+
+    static func buttonLightGray() -> UIColor {
+        UIColor(named: "buttonLightGray")!
+    }
 }

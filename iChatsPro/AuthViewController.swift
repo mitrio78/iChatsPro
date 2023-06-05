@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - AuthViewController
 
-class AuthViewController: UIViewController {
+final class AuthViewController: UIViewController {
 
     // MARK: - UI Properties
 
@@ -81,9 +81,9 @@ fileprivate extension AuthViewController {
 
     func setupViews() {
         view.backgroundColor = .systemBackground
-        let googleView = AuthButton(label: googleLabel, button: googleButton)
-        let emailView = AuthButton(label: emailLabel, button: eMailButton)
-        let loginView = AuthButton(label: alreadyOnboardLabel, button: loginButton)
+        let googleView = TemplateButton(label: googleLabel, button: googleButton)
+        let emailView = TemplateButton(label: emailLabel, button: eMailButton)
+        let loginView = TemplateButton(label: alreadyOnboardLabel, button: loginButton)
 
         stackView.addArrangedSubviews([googleView, emailView, loginView])
 
