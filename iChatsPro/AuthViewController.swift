@@ -81,6 +81,7 @@ fileprivate extension AuthViewController {
 
     func setupViews() {
         view.backgroundColor = .systemBackground
+        googleButton.customizeGoogleButton()
         let googleView = TemplateButton(label: googleLabel, button: googleButton)
         let emailView = TemplateButton(label: emailLabel, button: eMailButton)
         let loginView = TemplateButton(label: alreadyOnboardLabel, button: loginButton)

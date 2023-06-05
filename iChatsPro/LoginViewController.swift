@@ -118,6 +118,7 @@ fileprivate extension LoginViewController {
 
     func setupViews() {
         view.backgroundColor = .systemBackground
+        googleButton.customizeGoogleButton()
         view.addSubview(welcomeLabel)
         view.addSubview(mainStack)
         view.addSubview(bottomStack)
