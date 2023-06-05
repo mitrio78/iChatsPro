@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		CA24FA132A2DE46F00206392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA122A2DE46F00206392 /* AppDelegate.swift */; };
 		CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA142A2DE46F00206392 /* SceneDelegate.swift */; };
-		CA24FA172A2DE46F00206392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA162A2DE46F00206392 /* ViewController.swift */; };
+		CA24FA172A2DE46F00206392 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA162A2DE46F00206392 /* AuthViewController.swift */; };
 		CA24FA1C2A2DE47200206392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA24FA1B2A2DE47200206392 /* Assets.xcassets */; };
 		CA24FA1F2A2DE47200206392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA24FA1D2A2DE47200206392 /* LaunchScreen.storyboard */; };
+		CA24FA272A2DEDE900206392 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */; };
+		CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */; };
+		CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */; };
+		CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */; };
+		CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA24FA0F2A2DE46F00206392 /* iChatsPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatsPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24FA122A2DE46F00206392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA24FA142A2DE46F00206392 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA24FA162A2DE46F00206392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA24FA162A2DE46F00206392 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CA24FA1B2A2DE47200206392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA24FA1E2A2DE47200206392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA24FA202A2DE47200206392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,12 @@
 			children = (
 				CA24FA122A2DE46F00206392 /* AppDelegate.swift */,
 				CA24FA142A2DE46F00206392 /* SceneDelegate.swift */,
-				CA24FA162A2DE46F00206392 /* ViewController.swift */,
+				CA24FA162A2DE46F00206392 /* AuthViewController.swift */,
+				CA24FA282A2DEF9B00206392 /* UIFont+Ext.swift */,
+				CA24FA2A2A2DF03200206392 /* UIColor+Ext.swift */,
+				CA24FA262A2DEDE900206392 /* UIButton+Ext.swift */,
+				CA24FA2E2A2DF3CA00206392 /* UIImageView+Ext.swift */,
+				CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */,
 				CA24FA1B2A2DE47200206392 /* Assets.xcassets */,
 				CA24FA1D2A2DE47200206392 /* LaunchScreen.storyboard */,
 				CA24FA202A2DE47200206392 /* Info.plist */,
@@ -134,9 +149,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA24FA172A2DE46F00206392 /* ViewController.swift in Sources */,
+				CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */,
+				CA24FA172A2DE46F00206392 /* AuthViewController.swift in Sources */,
 				CA24FA132A2DE46F00206392 /* AppDelegate.swift in Sources */,
 				CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */,
+				CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */,
+				CA24FA272A2DEDE900206392 /* UIButton+Ext.swift in Sources */,
+				CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */,
+				CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
