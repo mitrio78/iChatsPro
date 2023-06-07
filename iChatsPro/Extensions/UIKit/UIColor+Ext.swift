@@ -23,4 +23,8 @@ extension UIColor {
     static func buttonLightGray() -> UIColor {
         UIColor(named: "buttonLightGray")!
     }
+
+    static func tabBarIconColor() -> UIColor {
+        UIColor(named: "tabBarIconColor")!
+    }
 }
