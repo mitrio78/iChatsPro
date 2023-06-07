@@ -9,7 +9,7 @@ import UIKit
 
 struct MChat: Hashable, Decodable {
     var username: String
-    var userImage: String?
+    var userImageString: String?
     var lastMessage: String?
     var id: Int
 

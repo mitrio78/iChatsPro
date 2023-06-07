@@ -32,6 +32,11 @@
 		CAD9A1202A30ADB400826555 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD9A11E2A30ADB400826555 /* activeChats.json */; };
 		CAD9A1212A30ADB400826555 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD9A11F2A30ADB400826555 /* waitingChats.json */; };
 		CAD9A1232A30ADD700826555 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1222A30ADD700826555 /* Bundle+Ext.swift */; };
+		CAD9A1262A30B5B200826555 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1252A30B5B200826555 /* ActiveChatCell.swift */; };
+		CAD9A1282A30C0E400826555 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1272A30C0E400826555 /* GradientView.swift */; };
+		CAD9A12A2A30C68100826555 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1292A30C68100826555 /* WaitingChatCell.swift */; };
+		CAD9A12C2A30C69D00826555 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A12B2A30C69D00826555 /* CellProtocol.swift */; };
+		CAD9A1312A30C99A00826555 /* ListSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1302A30C99A00826555 /* ListSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		CAD9A11E2A30ADB400826555 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		CAD9A11F2A30ADB400826555 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		CAD9A1222A30ADD700826555 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		CAD9A1252A30B5B200826555 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
+		CAD9A1272A30C0E400826555 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CAD9A1292A30C68100826555 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
+		CAD9A12B2A30C69D00826555 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		CAD9A1302A30C99A00826555 /* ListSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,15 +104,12 @@
 		CA24FA112A2DE46F00206392 /* iChatsPro */ = {
 			isa = PBXGroup;
 			children = (
+				CAD9A12D2A30C96400826555 /* Modules */,
 				CAD9A11D2A30ADA700826555 /* MockData */,
-				CAD9A1152A3087C100826555 /* Authenication */,
 				CA24FA392A2E335C00206392 /* Views */,
 				CA24FA322A2DF78800206392 /* App */,
 				CA24FA312A2DF77500206392 /* Extensions */,
 				CAD9A11C2A30A7DA00826555 /* Model */,
-				CAD9A1132A30833800826555 /* ListViewController.swift */,
-				CAD9A1182A30884400826555 /* PeopleViewController.swift */,
-				CAD9A1162A3087F000826555 /* MainTabBarController.swift */,
 				CA24FA1B2A2DE47200206392 /* Assets.xcassets */,
 				CA24FA1D2A2DE47200206392 /* LaunchScreen.storyboard */,
 				CA24FA202A2DE47200206392 /* Info.plist */,
@@ -148,6 +155,7 @@
 				CA24FA332A2DF8C900206392 /* TemplateButton.swift */,
 				CA24FA3A2A2E35B700206392 /* SingleLineTextField.swift */,
 				CA24FA402A2E4DF000206392 /* PhotoView.swift */,
+				CAD9A1272A30C0E400826555 /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +186,45 @@
 				CAD9A11F2A30ADB400826555 /* waitingChats.json */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		CAD9A1242A30B5A300826555 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A1252A30B5B200826555 /* ActiveChatCell.swift */,
+				CAD9A1292A30C68100826555 /* WaitingChatCell.swift */,
+				CAD9A12B2A30C69D00826555 /* CellProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CAD9A12D2A30C96400826555 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A1182A30884400826555 /* PeopleViewController.swift */,
+				CAD9A1162A3087F000826555 /* MainTabBarController.swift */,
+				CAD9A12E2A30C96F00826555 /* List */,
+				CAD9A1152A3087C100826555 /* Authenication */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CAD9A12E2A30C96F00826555 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A12F2A30C97B00826555 /* Header */,
+				CAD9A1242A30B5A300826555 /* Cell */,
+				CAD9A1132A30833800826555 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		CAD9A12F2A30C97B00826555 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A1302A30C99A00826555 /* ListSectionHeader.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD9A1142A30833800826555 /* ListViewController.swift in Sources */,
+				CAD9A1282A30C0E400826555 /* GradientView.swift in Sources */,
 				CA24FA382A2E334200206392 /* SignUpViewController.swift in Sources */,
 				CAD9A1172A3087F000826555 /* MainTabBarController.swift in Sources */,
 				CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */,
@@ -260,17 +308,21 @@
 				CAD9A1192A30884400826555 /* PeopleViewController.swift in Sources */,
 				CA24FA412A2E4DF000206392 /* PhotoView.swift in Sources */,
 				CA24FA3B2A2E35B700206392 /* SingleLineTextField.swift in Sources */,
+				CAD9A12C2A30C69D00826555 /* CellProtocol.swift in Sources */,
 				CA24FA342A2DF8C900206392 /* TemplateButton.swift in Sources */,
 				CA24FA172A2DE46F00206392 /* AuthViewController.swift in Sources */,
 				CA24FA132A2DE46F00206392 /* AppDelegate.swift in Sources */,
 				CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */,
 				CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */,
 				CA24FA272A2DEDE900206392 /* UIButton+Ext.swift in Sources */,
+				CAD9A12A2A30C68100826555 /* WaitingChatCell.swift in Sources */,
 				CAD9A11B2A30A77800826555 /* MChatModel.swift in Sources */,
+				CAD9A1312A30C99A00826555 /* ListSectionHeader.swift in Sources */,
 				CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */,
 				CA24FA3D2A2E437500206392 /* LoginViewController.swift in Sources */,
 				CA24FA3F2A2E4BEB00206392 /* ProfileSetupViewController.swift in Sources */,
 				CAD9A1232A30ADD700826555 /* Bundle+Ext.swift in Sources */,
+				CAD9A1262A30B5B200826555 /* ActiveChatCell.swift in Sources */,
 				CA24FA432A2E547B00206392 /* UISegmentedControl+Ext.swift in Sources */,
 				CA24FA2D2A2DF2C200206392 /* UILabel+Ext.swift in Sources */,
 			);

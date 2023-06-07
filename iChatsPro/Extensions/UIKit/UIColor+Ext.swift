@@ -27,4 +27,16 @@ extension UIColor {
     static func tabBarIconColor() -> UIColor {
         UIColor(named: "tabBarIconColor")!
     }
+
+    static var gradient1: UIColor {
+        UIColor(named: "gradient1")!
+    }
+
+    static var gradient2: UIColor {
+        UIColor(named: "gradient2")!
+    }
+
+    static var sectionHeader: UIColor {
+        UIColor(named: "sectionHeader")!
+    }
 }
