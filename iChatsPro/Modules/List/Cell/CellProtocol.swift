@@ -8,6 +8,9 @@
 import Foundation
 
 protocol SelfConfigureCell {
+
+    typealias Mo = Hashable
+
     static var reuseId: String { get }
-    func configure(with model: MChat)
+    func configure(with model: any Mo)
 }

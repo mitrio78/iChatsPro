@@ -39,4 +39,8 @@ extension UIColor {
     static var sectionHeader: UIColor {
         UIColor(named: "sectionHeader")!
     }
+
+    static var shadowColor: UIColor {
+        UIColor(named: "shadowColor")!
+    }
 }

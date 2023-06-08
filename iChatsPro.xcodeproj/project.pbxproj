@@ -37,6 +37,11 @@
 		CAD9A12A2A30C68100826555 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1292A30C68100826555 /* WaitingChatCell.swift */; };
 		CAD9A12C2A30C69D00826555 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A12B2A30C69D00826555 /* CellProtocol.swift */; };
 		CAD9A1312A30C99A00826555 /* ListSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1302A30C99A00826555 /* ListSectionHeader.swift */; };
+		CAD9A1332A320D0700826555 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD9A1322A320D0700826555 /* users.json */; };
+		CAD9A1362A320DBF00826555 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1352A320DBF00826555 /* MUser.swift */; };
+		CAD9A1392A320F8800826555 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A1382A320F8800826555 /* Section.swift */; };
+		CAD9A13C2A321A7D00826555 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A13B2A321A7D00826555 /* UserCell.swift */; };
+		CAD9A13E2A32209A00826555 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9A13D2A32209A00826555 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		CAD9A1292A30C68100826555 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		CAD9A12B2A30C69D00826555 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
 		CAD9A1302A30C99A00826555 /* ListSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionHeader.swift; sourceTree = "<group>"; };
+		CAD9A1322A320D0700826555 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		CAD9A1352A320DBF00826555 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		CAD9A1382A320F8800826555 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		CAD9A13B2A321A7D00826555 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CAD9A13D2A32209A00826555 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 				CA24FA2C2A2DF2C100206392 /* UILabel+Ext.swift */,
 				CA24FA352A2DFD0900206392 /* UIStackView+Ext.swift */,
 				CA24FA422A2E547B00206392 /* UISegmentedControl+Ext.swift */,
+				CAD9A13D2A32209A00826555 /* UIViewController+Ext.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -175,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD9A11A2A30A77800826555 /* MChatModel.swift */,
+				CAD9A1352A320DBF00826555 /* MUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD9A11E2A30ADB400826555 /* activeChats.json */,
+				CAD9A1322A320D0700826555 /* users.json */,
 				CAD9A11F2A30ADB400826555 /* waitingChats.json */,
 			);
 			path = MockData;
@@ -201,7 +214,8 @@
 		CAD9A12D2A30C96400826555 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CAD9A1182A30884400826555 /* PeopleViewController.swift */,
+				CAD9A1372A320F6E00826555 /* ViewModels */,
+				CAD9A1342A320D1600826555 /* People */,
 				CAD9A1162A3087F000826555 /* MainTabBarController.swift */,
 				CAD9A12E2A30C96F00826555 /* List */,
 				CAD9A1152A3087C100826555 /* Authenication */,
@@ -225,6 +239,31 @@
 				CAD9A1302A30C99A00826555 /* ListSectionHeader.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		CAD9A1342A320D1600826555 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A13A2A321A7100826555 /* Cell */,
+				CAD9A1182A30884400826555 /* PeopleViewController.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		CAD9A1372A320F6E00826555 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A1382A320F8800826555 /* Section.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CAD9A13A2A321A7100826555 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9A13B2A321A7D00826555 /* UserCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD9A1332A320D0700826555 /* users.json in Resources */,
 				CA24FA1F2A2DE47200206392 /* LaunchScreen.storyboard in Resources */,
 				CAD9A1202A30ADB400826555 /* activeChats.json in Resources */,
 				CA24FA1C2A2DE47200206392 /* Assets.xcassets in Resources */,
@@ -301,6 +341,7 @@
 			files = (
 				CAD9A1142A30833800826555 /* ListViewController.swift in Sources */,
 				CAD9A1282A30C0E400826555 /* GradientView.swift in Sources */,
+				CAD9A13E2A32209A00826555 /* UIViewController+Ext.swift in Sources */,
 				CA24FA382A2E334200206392 /* SignUpViewController.swift in Sources */,
 				CAD9A1172A3087F000826555 /* MainTabBarController.swift in Sources */,
 				CA24FA2F2A2DF3CA00206392 /* UIImageView+Ext.swift in Sources */,
@@ -315,9 +356,12 @@
 				CA24FA152A2DE46F00206392 /* SceneDelegate.swift in Sources */,
 				CA24FA2B2A2DF03200206392 /* UIColor+Ext.swift in Sources */,
 				CA24FA272A2DEDE900206392 /* UIButton+Ext.swift in Sources */,
+				CAD9A13C2A321A7D00826555 /* UserCell.swift in Sources */,
 				CAD9A12A2A30C68100826555 /* WaitingChatCell.swift in Sources */,
+				CAD9A1392A320F8800826555 /* Section.swift in Sources */,
 				CAD9A11B2A30A77800826555 /* MChatModel.swift in Sources */,
 				CAD9A1312A30C99A00826555 /* ListSectionHeader.swift in Sources */,
+				CAD9A1362A320DBF00826555 /* MUser.swift in Sources */,
 				CA24FA292A2DEF9B00206392 /* UIFont+Ext.swift in Sources */,
 				CA24FA3D2A2E437500206392 /* LoginViewController.swift in Sources */,
 				CA24FA3F2A2E4BEB00206392 /* ProfileSetupViewController.swift in Sources */,

@@ -20,7 +20,9 @@ final class ListViewController: UIViewController {
     private var searchController: UISearchController!
     private var snapshot: NSDiffableDataSourceSnapshot<Section, MChat>!
 
-    private enum Section: Int, CaseIterable {
+    // MARK: - Private Section
+
+    enum Section: Int, CaseIterable {
         case waitingChats, activeChats
 
         func description() -> String {
@@ -140,10 +142,20 @@ fileprivate extension ListViewController {
 
             switch section {
             case .activeChats:
-                return self.configure(cellType: ActiveChatCell.self, with: chats[indexPath.item], for: indexPath)
+                return self.configure(
+                    collectionView: collectionView,
+                    cellType: ActiveChatCell.self,
+                    with: chats[indexPath.item],
+                    for: indexPath
+                )
 
             case .waitingChats:
-                return configure(cellType: WaitingChatsCell.self, with: waitingChats[indexPath.item], for: indexPath)
+                return configure(
+                    collectionView: collectionView,
+                    cellType: WaitingChatsCell.self,
+                    with: waitingChats[indexPath.item],
+                    for: indexPath
+                )
             }
         })
         dataSource.supplementaryViewProvider = { (collectionView, kind, indexPath) -> UICollectionReusableView in
@@ -223,14 +235,6 @@ fileprivate extension ListViewController {
         section.interGroupSpacing = 16
         section.contentInsets = .init(top: 16, leading: 20, bottom: .zero, trailing: 20)
         return section
-    }
-
-    func configure<T: SelfConfigureCell>(cellType: T.Type, with model: MChat, for indexPath: IndexPath) -> T {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: T.reuseId, for: indexPath) as? T else {
-            fatalError()
-        }
-        cell.configure(with: model)
-        return cell
     }
 
     func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {

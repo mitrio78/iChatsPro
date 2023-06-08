@@ -29,8 +29,8 @@ final class MainTabBarController: UITabBarController {
         tabBar.tintColor = .tabBarIconColor()
 
         viewControllers = [
-            getNavController(rootVC: listVC, title: "Chats", image: listImage!),
-            getNavController(rootVC: peopleVC, title: "People", image: peopleImage!)
+            getNavController(rootVC: peopleVC, title: "People", image: peopleImage!),
+            getNavController(rootVC: listVC, title: "Chats", image: listImage!)
         ]
     }
 

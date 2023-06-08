@@ -25,7 +25,11 @@ extension WaitingChatsCell: SelfConfigureCell {
         Self.description()
     }
 
-    func configure(with model: MChat) {
+    func configure(with model: any Mo) {
+        guard let model = model as? MChat else {
+            return
+        }
+        
         friendImageView.image = UIImage(named: model.userImageString ?? "")
     }
 }

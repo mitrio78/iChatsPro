@@ -40,14 +40,17 @@ final class ActiveChatCell: UICollectionViewCell {
 }
 
 extension ActiveChatCell: SelfConfigureCell {
-    static var reuseId: String {
-        Self.description()
-    }
-
-    func configure(with model: MChat) {
+    func configure(with model: any Mo) {
+        guard let model = model as? MChat else {
+            return
+        }
         friendImage.image = UIImage(named: model.userImageString ?? "")
         friendName.text = model.username
         lastMessage.text = model.lastMessage
+    }
+
+    static var reuseId: String {
+        Self.description()
     }
 }
 
